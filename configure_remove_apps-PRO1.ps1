@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Remove built-in apps (modern apps) from Windows 10.
 
