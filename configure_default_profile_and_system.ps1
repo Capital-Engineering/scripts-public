@@ -1,5 +1,9 @@
 ### Configure System
 
+##MDM Auto Enrollment
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM" /v AutoEnrollMDM /d 1 /t REG_DWORD /f
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM" /v UseAADCredentialType /d 1 /t REG_DWORD /f
+
 ## OneDrive
 reg add "HKLM\SOFTWARE\Policies\Microsoft\OneDrive" /v SilentAccountConfig /t REG_DWORD /d 1 /f
 reg add "HKLM\SOFTWARE\Policies\Microsoft\OneDrive" /v KFMSilentOptIn /t REG_SZ /d f0749fe6-9b92-479a-880b-7ee784824fd7 /f
