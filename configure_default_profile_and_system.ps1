@@ -45,7 +45,7 @@ reg add "HKLM\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advance
 reg add "HKLM\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v MMTaskbarEnabled /t REG_DWORD /d 1 /f
 
 # Combine icons only when taskbar is full on all screens
-reg add "HKLM\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v MMTaskbarGlomLevel /t REG_DWORD /d 1 /f
+reg add "HKLM\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v MMTaskbarMode /t REG_DWORD /d 1 /f
 
 # Hide People button from Taskbar
 reg add "HKLM\DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" /v PeopleBand /t REG_DWORD /d 0 /f
