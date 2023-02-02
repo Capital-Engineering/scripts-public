@@ -1,0 +1,26 @@
+::LogDate Variables::
+
+::strip colons out::
+set tm=%time::=%
+
+::replace spaces with zero (so it looks right if it's earlier than 10:00)::
+set tm=%tm: =0%
+
+::get six characters of what remains (starting at offset zero)::
+set tm=%tm:~0,6%
+
+::use this if your system clock is formatted dd/mm/yyyy::
+::set logdate=%date:~-4%%date:~-7,2%%date:~-10,2%-%tm%
+
+::use this if your system clock is formatted mm/dd/yyyy::
+set logdate=%date:~-4%%date:~-10,2%%date:~-7,2%-%tm%
+
+::echo %logdate%
+
+::RoboCopy Scripts::
+
+robocopy "\\capsac\test" "\\10.0.10.1\network\test" /E /DCOPY:T /COPY:DATS /R:0 /W:0 /NP /NDL /NFL /FP /TEE /XF *.db ~$* /Log+:C:\CECI\robocopy-network-mirror\robocopy-mirror-%logdate%.log
+
+::Send email using blat::
+
+\\capsac\sysmgr\source\public\tools\blat.exe -to itstaff@capital-engineering.com -f blat@capital-engineering.com -server silverado -subject "Script Completed" -body "Script Completed" -log C:\CECI\robocopy-network-mirror\robocopy-mirror-%logdate%.log

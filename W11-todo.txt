@@ -1,0 +1,33 @@
+Recieve updates for other Microsoft Products
+Location Services on
+Let apps access your location / Setting ON / Everything else off including Windows Web Extension Pack
+Night Light On
+Schedule Sunrise to Sunset
+Enable Clipboard History
+Background Windows Spotlight
+Color Mode Dark
+Accent color automatic
+Show accesnt color on Start and taskbar ON
+Show accent color on the bars and windows borders ON
+Lock screen status NONE
+Start Folders SETTINGS / FILE EXPLORER
+Taskbar itemd OFF Search / Task View / Widgets / Chat
+Open File Explorer This PC
+Hide extension for known file types DISABLE
+Taskbar remove all shortcuts
+
+Uninstall
+
+# Disable suggestions
+reg add "HKLM\DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v SystemPaneSuggestionsEnabled /t REG_DWORD /d 0 /f
+reg add "HKLM\DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v SubscribedContent-338388Enabled /t REG_DWORD /d 0 /f
+reg add "HKLM\DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v SubscribedContent-338389Enabled /t REG_DWORD /d 0 /f
+
+# Disable consumer features (also in autouattend.xml)
+reg add HKLM\Software\Policies\Microsoft\Windows\CloudContent /v DisableWindowsConsumerFeatures /t REG_DWORD /d 1 /f
+
+Software\Policies\Microsoft\Windows\CloudContent
+
+DisableConsumerAccountStateContent
+DisableCloudOptimizedContent
+DisableWindowsConsumerFeatures
