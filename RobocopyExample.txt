@@ -19,7 +19,7 @@ set logdate=%date:~-4%%date:~-10,2%%date:~-7,2%-%tm%
 
 ::RoboCopy Scripts::
 
-robocopy "\\capsac\test" "\\10.0.10.1\network\test" /E /DCOPY:T /COPY:DATS /R:0 /W:0 /NP /NDL /NFL /FP /TEE /XF *.db ~$* /Log+:C:\CECI\robocopy-network-mirror\robocopy-mirror-%logdate%.log
+robocopy "\\server1\folder1" "\\server2\folder2" /S /B /COPY:DAT /DCOPY:DAT /R:0 /W:0 /NP /NDL /NFL /FP /TEE /XD "System Volume Information" /XF *.db ~$* desktop.ini /UNILOG:robocopy-%logdate%.log
 
 ::Send email using blat::
 
