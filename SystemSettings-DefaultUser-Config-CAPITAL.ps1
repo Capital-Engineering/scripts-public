@@ -2,8 +2,15 @@
 
 ### Configure System
 
-## Disable Chat in WIndows 11 *added 20221213
-reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows" /v ChatIcon /d 3 /t REG_DWORD /f
+## Change Taskbar Search box to "Search icon and label" in Windows 11 *added by Ty 02230606
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search" /v SearchboxTaskbarMode /d 3 /t REG_DWORD /f
+
+## Disable Taskbar Chat Icon in WIndows 11 *added by Ty 02230606
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarMn /d 0 /t REG_DWORD /f
+
+## Disable Taskbar Widgets in WIndows 11 *added by Ty 02230606
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarDa /d 0 /t REG_DWORD /f
+
 
 ##MDM Auto Enrollment
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM" /v AutoEnrollMDM /d 1 /t REG_DWORD /f
