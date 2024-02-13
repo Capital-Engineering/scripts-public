@@ -2,14 +2,18 @@
 
 ### Configure System
 
-## Change Taskbar Search box to "Search icon and label" in Windows 11 *added by Ty 02230606
+## Change Taskbar Search box to "Search icon and label" in Windows 11 *added by Ty 20230606
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search" /v SearchboxTaskbarMode /d 3 /t REG_DWORD /f
 
-## Disable Taskbar Chat Icon in WIndows 11 *added by Ty 02230606
+## Disable Taskbar Chat Icon in WIndows 11 *added by Ty 20230606
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarMn /d 0 /t REG_DWORD /f
 
-## Disable Taskbar Widgets in WIndows 11 *added by Ty 02230606
+## Disable Taskbar Widgets in WIndows 11 *added by Ty 20230606
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarDa /d 0 /t REG_DWORD /f
+
+## Set Accent Color to Automatic in Windows 11 *added by Ty 20240117
+## Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "AutoColorization" -Value 1
+reg add "HKCU\Control Panel\Desktop" /v AutoColorization /t REG_DWORD /d 1 /f
 
 
 ##MDM Auto Enrollment
