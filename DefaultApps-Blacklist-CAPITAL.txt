@@ -4,7 +4,6 @@ List of apps to be removed:
 #AppUp.IntelManagementandSecurityStatus
 #AppUp.IntelOptaneMemoryandStorageManagement
 #AppUp.ThunderboltControlCenter
-#DellInc.DellCommandUpdate
 #DellInc.DellDigitalDelivery
 #DellInc.DellOptimizer
 #DellInc.DellPowerManager
