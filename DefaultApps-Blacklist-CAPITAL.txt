@@ -1,14 +1,3 @@
-List of apps to identify for removal:
-
-ClipChamp
-Disney
-Spotify
-WhatsApp
-Prime Video
-TikTok
-Instagram
-Messanger
-
 List of apps to be removed:
 
 #AppUp.IntelGraphicsExperience
@@ -26,7 +15,6 @@ List of apps to be removed:
 #Microsoft.GamingApp
 #Microsoft.GetHelp
 #Microsoft.Getstarted
-#Microsoft.MicrosoftOfficeHub
 #Microsoft.MicrosoftSolitaireCollection
 #Microsoft.MixedReality.Portal
 #Microsoft.Office.OneNote
