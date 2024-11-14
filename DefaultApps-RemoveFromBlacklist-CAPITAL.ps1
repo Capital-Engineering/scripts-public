@@ -96,7 +96,7 @@ Begin {
 
     # Black List of Appx Provisioned Packages to Remove for All Users
     $BlackListedAppsURL = $null
-    $BlackListedAppsURL = "https://raw.githubusercontent.com/Capital-Engineering/scripts/main/CAPITAL/ListOfDefaultAppsToRemove-CAPITAL.txt?token=GHSAT0AAAAAAB4LMFFGZZSHSAZGTUMGJ7QCY4ZHM2A"
+    $BlackListedAppsURL = "https://raw.githubusercontent.com/Capital-Engineering/scripts-public/refs/heads/main/DefaultApps-Blacklist-CAPITAL.txt"
     Write-LogEntry -Value "BlackListedAppsURL:$($BlackListedAppsURL)"
 
     #Attempt to obtain list of BlackListedApps
