@@ -24,14 +24,14 @@ Modified by mreid 20241114
 #Microsoft.XboxSpeechToTextOverlay
 #Microsoft.YourPhone
 
-::Added by mreid on 20241114::
-#NVIDIACorp.NVIDIAControlPanel
+::Removed by mreid on 20241114::
+Microsoft.ZuneMusic
 
 ::Added by mreid on 20241116
 #MicrosoftWindows.Client.WebExperience
 
-::Removed by mreid on 20241114::
-Microsoft.ZuneMusic
+::Removed by mreid on 20241117::
+NVIDIACorp.NVIDIAControlPanel
 
 ::Not included as of 24H2::
 Microsoft.Getstarted
