@@ -12,6 +12,7 @@ Modified by mreid 20241114
 #DellInc.PartnerPromo
 #Microsoft.BingNews
 #Microsoft.BingWeather
+#Microsoft.Copilot
 #Microsoft.GamingApp
 #Microsoft.GetHelp
 #Microsoft.MicrosoftSolitaireCollection
@@ -23,28 +24,24 @@ Modified by mreid 20241114
 #Microsoft.XboxIdentityProvider
 #Microsoft.XboxSpeechToTextOverlay
 #Microsoft.YourPhone
-
-::Removed by mreid on 20241114::
-Microsoft.ZuneMusic
-
-::Added by mreid on 20241116
 #MicrosoftWindows.Client.WebExperience
 
-::Removed by mreid on 20241117::
-NVIDIACorp.NVIDIAControlPanel
+::Keep List::
+Microsoft.ZuneMusic ::mreid 20241114::
+NVIDIACorp.NVIDIAControlPanel ::mreid 20241117::
 
 ::Not included as of 24H2::
-Microsoft.Getstarted
-Microsoft.Outlook.DesktopIntegrationServicess
-Microsoft.People
-Microsoft.SkypeApp
-Microsoft.Wallet
-Microsoft.WindowsCommunicationsApps
-Microsoft.WindowsMaps
-Microsoft.XboxApp
-Microsoft.XboxGameOverlay
-Microsoft.ZuneVideo
-MicrosoftTeams
-microsoft.windowscommunicationsapps
-Microsoft.MixedReality.Portal
-Microsoft.Office.OneNote
+#Microsoft.Getstarted
+#Microsoft.Outlook.DesktopIntegrationServicess
+#Microsoft.People
+#Microsoft.SkypeApp
+#Microsoft.Wallet
+#Microsoft.WindowsCommunicationsApps
+#Microsoft.WindowsMaps
+#Microsoft.XboxApp
+#Microsoft.XboxGameOverlay
+#Microsoft.ZuneVideo
+#MicrosoftTeams
+#microsoft.windowscommunicationsapps
+#Microsoft.MixedReality.Portal
+#Microsoft.Office.OneNote
