@@ -1,6 +1,8 @@
-Modified by mreid 20241114
+::List of app to keep::
+Microsoft.ZuneMusic
+NVIDIACorp.NVIDIAControlPanel
 
-::List of apps to be removed::
+::List of apps to be removed (must have # in front)::
 #AppUp.IntelGraphicsExperience
 #AppUp.IntelManagementandSecurityStatus
 #AppUp.IntelOptaneMemoryandStorageManagement
@@ -25,10 +27,6 @@ Modified by mreid 20241114
 #Microsoft.XboxSpeechToTextOverlay
 #Microsoft.YourPhone
 #MicrosoftWindows.Client.WebExperience
-
-::Keep List::
-Microsoft.ZuneMusic ::mreid 20241114::
-NVIDIACorp.NVIDIAControlPanel ::mreid 20241117::
 
 ::Not included as of 24H2::
 #Microsoft.Getstarted
